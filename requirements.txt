@@ -3,7 +3,7 @@ requests>=2.21.0,<3
 ccxt>=1.17.434,<2
 pywaves>=0.8.20,<1
 bitshares>=0.5.0,<0.6
-uptick>=0.2.4,<1
+uptick==0.2.2
 ruamel.yaml>=0.15.37,<1
 appdirs>=1.4.3,<2
 sdnotify>=0.3.2,<1

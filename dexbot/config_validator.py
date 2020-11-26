@@ -3,7 +3,11 @@ from bitshares.asset import Asset
 from bitshares.exceptions import AccountDoesNotExistsException, AssetDoesNotExistsException, KeyAlreadyInStoreException
 from bitshares.instance import shared_bitshares_instance
 from bitsharesbase.account import PrivateKey
+from bitsharesbase.chains import known_chains
 
+# Note: chain_id is generated from genesis.json, every time it's changes you need to get new chain_id from
+# `bitshares.rpc.get_chain_properties()`
+known_chains["TEST"]["chain_id"] = "0a2635a87e323bb2db4c8bcaab2f3238c910108e6b3dfab89f0b43283d72c969"
 
 class ConfigValidator:
     """
